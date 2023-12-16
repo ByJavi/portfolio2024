@@ -4,9 +4,9 @@ function Resume() {
   return (
     <section
       id="resume"
-      className="flex items-center justify-center flex-col pt-20 pb-6 dark:text-white"
+      className="flex items-center justify-center h-screen flex-col pt-20 pb-6 dark:text-white"
     >
-      <article className="text-center mt-56 mb-10">
+      <article className="text-center mt-10 mb-5">
         <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold">
           Ledesma Javier
         </h1>
