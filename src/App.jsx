@@ -63,7 +63,11 @@ function App() {
         {theme === 'dark' ? sun : moon}
       </button>
 
-      <main className="bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
+      <main
+        className={`bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 min-h-screen font-inter scroll-container ${
+          theme ? 'dark' : 'light'
+        }-scroll`}
+      >
         <div className="">
           <Resume />
           <Portfolio />
