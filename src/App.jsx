@@ -7,14 +7,13 @@ import Resume from './components/Resume'
 import Timeline from './components/Timeline'
 
 import { sun, moon } from './utils/constants'
-import CarouselText from './components/CarouselText/CarouselText'
 import ScrollUp from './components/ScrollUp'
 
 function App() {
   // Inicializar el tema desde el localStorage o establecer 'dark' como valor predeterminado
   const storedTheme = localStorage.getItem('theme')
   const [theme, setTheme] = useState(storedTheme || 'dark')
-  const [isVisible, setIsVisible] = useState(true)
+  // const [isVisible, setIsVisible] = useState(true)
 
   // Usar un useEffect para configurar el tema inicial basado en la configuración del sistema
   useEffect(() => {
@@ -59,16 +58,14 @@ function App() {
         type="button"
         onClick={handleThemeChange}
         aria-label={`Toggle ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
-        className="fixed p-2 z-10 right-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-purple-40 dark:bg-violet-300"
+        className="fixed p-2 z-10 right-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-violet-300"
       >
         {theme === 'dark' ? sun : moon}
       </button>
       <main className="bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 min-h-screen font-inter ">
         <div className="">
           <Resume />
-          <CarouselText texts="Portfolio" />
           <Portfolio />
-          <CarouselText texts="Timeline" />
           <Timeline />
           <Contact />
           <Footer />

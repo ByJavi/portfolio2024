@@ -1,8 +1,8 @@
-function Button({ data, link }) {
+function Button({ data, link, target }) {
   return (
     <a
       href={link}
-      target="_blank"
+      target={target}
       className="relative inline-block px-4 py-2 font-medium group"
       rel="noreferrer"
     >
