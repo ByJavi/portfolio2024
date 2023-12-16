@@ -6,7 +6,7 @@ function Resume() {
       id="resume"
       className="flex items-center justify-center flex-col pt-20 pb-6 dark:text-white"
     >
-      <article className="text-center">
+      <article className="text-center mt-56 mb-10">
         <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold">
           Ledesma Javier
         </h1>
@@ -19,7 +19,7 @@ function Resume() {
           creación de soluciones innovadoras en el mundo digital.
         </p>
       </article>
-      <article className="flex gap-4">
+      <article className="flex gap-4 mb-60">
         <Button data="Curriculum" link="Javier_Ledesma.pdf" target="_blank" />
         <Button
           data="LinkedIn"
