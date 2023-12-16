@@ -14,6 +14,7 @@ function ScrollUp({ theme }) {
 
   return (
     <button
+      id="scrollUp"
       onClick={scrollToTop}
       className="fixed p-2 z-10 right-10 bottom-4 text-lg rounded-md bg-stone-950 dark:bg-purple-40 dark:bg-violet-300"
     >

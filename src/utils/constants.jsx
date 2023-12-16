@@ -33,7 +33,19 @@ export const moon = (
 )
 
 export const arrowUpWhite = (
-  <img src="/arrowUpWhite.svg" width={24} height={24} />
+  <img
+    src="/arrowUpWhite.svg"
+    width={24}
+    height={24}
+    alt="arrow up color White"
+  />
 )
 
-export const arrowUpDark = <img src="/arrowUpDark.svg" width={24} height={24} />
+export const arrowUpDark = (
+  <img
+    src="/arrowUpDark.svg"
+    width={24}
+    height={24}
+    alt="arrow up color Black"
+  />
+)
