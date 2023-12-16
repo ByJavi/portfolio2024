@@ -58,6 +58,7 @@ function App() {
         id="darkmode"
         type="button"
         onClick={handleThemeChange}
+        aria-label={`Toggle ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
         className="fixed p-2 z-10 right-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-purple-40 dark:bg-violet-300"
       >
         {theme === 'dark' ? sun : moon}
