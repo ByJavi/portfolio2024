@@ -8,11 +8,13 @@ import Timeline from './components/Timeline'
 
 import { sun, moon } from './utils/constants'
 import CarouselText from './components/CarouselText/CarouselText'
+import ScrollUp from './components/ScrollUp'
 
 function App() {
   // Inicializar el tema desde el localStorage o establecer 'dark' como valor predeterminado
   const storedTheme = localStorage.getItem('theme')
   const [theme, setTheme] = useState(storedTheme || 'dark')
+  const [isVisible, setIsVisible] = useState(true)
 
   // Usar un useEffect para configurar el tema inicial basado en la configuración del sistema
   useEffect(() => {
@@ -37,6 +39,19 @@ function App() {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'))
   }
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollY = window.scrollY || document.documentElement.scrollTop
+  //     setIsVisible(scrollY > window.innerHeight)
+  //   }
+
+  //   window.addEventListener('scroll', handleScroll)
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll)
+  //   }
+  // }, [])
+
   return (
     <>
       <button
@@ -56,6 +71,7 @@ function App() {
           <Contact />
           <Footer />
         </div>
+        <ScrollUp theme={theme} />
       </main>
     </>
   )
