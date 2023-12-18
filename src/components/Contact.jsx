@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 import CarouselText from './CarouselText/CarouselText'
-// import EmailSend from './EmailSend'
+import Button from './Button'
 
 function Contact() {
   const [result, setResult] = useState(false)
@@ -29,7 +29,7 @@ function Contact() {
       )
     setTimeout(() => {
       setResult(false)
-    }, 5000)
+    }, 3000)
   }
 
   return (
@@ -65,15 +65,12 @@ function Contact() {
               className="p-2 mb-4 border-2 rounded-sm dark:bg-transparent border-stone-950 dark:border-violet-700 focus:outline-none focus:bg-stone-300 dark:focus:bg-stone-700"
             ></textarea>
 
-            <button
-              type="submit"
-              className="relative inline-block px-8 py-3 font-medium group"
-            >
-              <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0 dark:bg-violet-700"></span>
-              <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black dark:bg-violet-300 dark:group-hover:bg-violet-700"></span>
-              <span className="relative text-black group-hover:text-white">
-                {result ? 'Mensaje Enviado' : 'Trabajemos Juntos'}
-              </span>
+            <button type="submit" className="">
+              {result ? (
+                <Button texts="Mensaje Enviado" />
+              ) : (
+                <Button texts="Trabajemos Juntos" />
+              )}
             </button>
           </form>
         </div>

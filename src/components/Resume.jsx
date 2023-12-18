@@ -20,12 +20,16 @@ function Resume() {
         </p>
       </article>
       <article className="flex gap-4 mb-60">
-        <Button data="Curriculum" link="Javier_Ledesma.pdf" target="_blank" />
-        <Button
-          data="LinkedIn"
-          link="https://www.linkedin.com/in/javier-ledesma-254321226/"
+        <a href="Javier_Ledesma.pdf" target="_blank" rel="noreferrer">
+          <Button texts="Curriculum" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/javier-ledesma-254321226/"
           target="_blank"
-        />
+          rel="noreferrer"
+        >
+          <Button texts="LinkedIn" />
+        </a>
       </article>
     </section>
   )

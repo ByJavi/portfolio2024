@@ -18,7 +18,7 @@ function Portfolio() {
           <PortfolioCard />
         </div>
         <div className="flex items-center justify-center m-10 p-5">
-          <Button data="Mas Proyectos" link="#" target="_self" />
+          <Button texts="Mas Proyectos" />
         </div>
       </div>
     </section>
