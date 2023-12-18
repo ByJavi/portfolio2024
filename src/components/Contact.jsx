@@ -67,7 +67,11 @@ function Contact() {
 
             <button type="submit" className="">
               {result ? (
-                <Button texts="Mensaje Enviado" />
+                <div className="animate-load">
+                  <span className="bg-overlay"></span>
+                  <span className="bg-border"></span>
+                  <p className="">Mensaje enviado!</p>
+                </div>
               ) : (
                 <Button texts="Trabajemos Juntos" />
               )}
