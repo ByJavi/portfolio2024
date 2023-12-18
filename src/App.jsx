@@ -32,14 +32,11 @@ function App() {
   // MOSTRAR BOTÓN UP
   useEffect(() => {
     const handleScroll = () => {
-      console.log('Scrolling...')
       setScrollY(window.scrollY)
     }
-
     window.addEventListener('scroll', handleScroll)
 
     return () => {
-      console.log('Removing scroll event listener.')
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
@@ -53,7 +50,6 @@ function App() {
       duration: 500,
       smooth: true
     })
-    console.log('up')
   }
 
   return (
