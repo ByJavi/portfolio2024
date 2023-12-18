@@ -43,7 +43,8 @@ function Contact() {
           <form
             ref={formulario}
             onSubmit={handleSubmit}
-            className="flex flex-col w-full md:w-7/12"
+            className="flex flex-col w-full md:w-7/12 "
+            data-aos="slide-up"
           >
             <input
               type="text"

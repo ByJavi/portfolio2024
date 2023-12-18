@@ -76,7 +76,7 @@ function App() {
           <Contact />
           <Footer />
         </div>
-        {scrollY > 100 && (
+        {scrollY > 10 && (
           <button
             id="scrollUp"
             onClick={handleScrollToTop}
