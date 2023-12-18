@@ -48,13 +48,13 @@ function Contact() {
               type="text"
               name="name"
               placeholder="Nombre"
-              className="my-2 p-2 bg-transparent border-stone-950 dark:border-violet-700 border-2 rounded-sm focus:outline-none focus:bg-stone-300 dark:focus:bg-stone-700"
+              className="my-2 p-2 contact-inputs"
             ></input>
             <input
               type="text"
               name="email"
               placeholder="Email"
-              className="my-2 p-2 bg-transparent  border-stone-950 dark:border-violet-700 border-2 rounded-sm focus:outline-none focus:bg-stone-300 dark:focus:bg-stone-700"
+              className="my-2 p-2 contact-inputs"
             ></input>
 
             <textarea
@@ -62,7 +62,7 @@ function Contact() {
               name="mensaje"
               placeholder="Comunica tu idea y hagámosla realidad"
               rows="10"
-              className="p-2 mb-4 border-2 rounded-sm dark:bg-transparent border-stone-950 dark:border-violet-700 focus:outline-none focus:bg-stone-300 dark:focus:bg-stone-700"
+              className="p-2 mb-4 contact-inputs"
             ></textarea>
 
             <button type="submit" className="">

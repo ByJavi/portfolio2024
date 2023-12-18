@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.scroll-container {
-  overflow-y: scroll;
-  max-height: 300px;
+@layer components {
+  .contact-inputs {
+    @apply border-2 rounded-sm dark:bg-transparent border-stone-950 dark:border-violet-700 focus:outline-none focus:bg-stone-300 dark:focus:bg-stone-700;
+  }
 }
 
+/* .scroll-container {
+  overflow-y: scroll;
+  max-height: 300px;
+} */
+
 /* Personalización de la barra de desplazamiento */
-.scroll-container::-webkit-scrollbar {
+/* .scroll-container::-webkit-scrollbar {
   width: 12px;
 }
 
@@ -27,4 +33,4 @@
 
 .dark .scroll-container::-webkit-scrollbar-track {
   background-color: rgb(196 181 253);
-}
+} */

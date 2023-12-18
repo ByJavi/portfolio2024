@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
+import { animateScroll } from 'react-scroll'
+
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
 import Resume from './components/Resume'
 import Timeline from './components/Timeline'
-import { sun, moon } from './utils/constants'
-import ScrollUp from './components/ScrollUp'
+import { sun, moon, arrowUpDark, arrowUpWhite } from './utils/constants'
 
 function App() {
   const storedTheme = localStorage.getItem('theme')
@@ -28,14 +29,17 @@ function App() {
     localStorage.setItem('theme', theme)
   }, [theme])
 
+  // MOSTRAR BOTÓN UP
   useEffect(() => {
     const handleScroll = () => {
+      console.log('Scrolling...')
       setScrollY(window.scrollY)
     }
 
     window.addEventListener('scroll', handleScroll)
 
     return () => {
+      console.log('Removing scroll event listener.')
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
@@ -45,10 +49,11 @@ function App() {
   }
 
   const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    animateScroll.scrollToTop({
+      duration: 500,
+      smooth: true
     })
+    console.log('up')
   }
 
   return (
@@ -64,9 +69,9 @@ function App() {
       </button>
 
       <main
-        className={`bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 min-h-screen font-inter scroll-container ${
+        className={`bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 font-inter${
           theme ? 'dark' : 'light'
-        }-scroll`}
+        }`}
       >
         <div className="">
           <Resume />
@@ -76,7 +81,13 @@ function App() {
           <Footer />
         </div>
         {scrollY > 100 && (
-          <ScrollUp theme={theme} handleScrollToTop={handleScrollToTop} />
+          <button
+            id="scrollUp"
+            onClick={handleScrollToTop}
+            className="fixed p-2 z-10 right-10 bottom-4 text-lg rounded-md bg-stone-950 dark:bg-violet-300"
+          >
+            {theme === 'light' ? arrowUpWhite : arrowUpDark}
+          </button>
         )}
       </main>
     </>
