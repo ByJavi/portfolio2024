@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import { arrowLeftWhite, arrowLeftBlack } from '../utils/constants'
 
 const ButtonBack = ({ theme }) => {
   const location = useLocation()
@@ -11,7 +12,7 @@ const ButtonBack = ({ theme }) => {
       to={parentPath}
       className="fixed p-2 z-10 left-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-violet-300"
     >
-      {theme === 'light' ? '<' : '>'}
+      {theme === 'light' ? arrowLeftWhite : arrowLeftBlack}
     </Link>
   )
 }

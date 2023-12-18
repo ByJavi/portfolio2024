@@ -49,3 +49,21 @@ export const arrowUpDark = (
     alt="arrow up color Black"
   />
 )
+
+export const arrowLeftBlack = (
+  <img
+    src="/bx-left-arrow-black.svg"
+    width={24}
+    height={24}
+    alt="arrow back to page"
+  />
+)
+
+export const arrowLeftWhite = (
+  <img
+    src="/bx-left-arrow-white.svg.svg"
+    width={24}
+    height={24}
+    alt="arrow back to page"
+  />
+)

@@ -1,4 +1,4 @@
-import ButtonBack from '../components/ButtonBack'
+import BackToPage from '../components/BackToPage'
 
 const NotFound = ({ theme }) => {
   return (
@@ -7,7 +7,7 @@ const NotFound = ({ theme }) => {
         theme ? 'dark' : 'light'
       }`}
     >
-      <ButtonBack theme={theme} />
+      <BackToPage theme={theme} />
       <article className="flex items-center justify-center h-screen flex-col pt-20 pb-6 text-center">
         <h2 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold ">
           404 - Página no encontrada
