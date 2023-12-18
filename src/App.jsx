@@ -1,13 +1,16 @@
+// App.js
 import { useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import { animateScroll } from 'react-scroll'
 
 import Home from './pages/home'
-import { sun, moon, arrowUpWhite, arrowUpDark } from './utils/constants'
+import NotFound from './pages/404'
+import ScrollUp from './components/ScrollUp'
 
 function App() {
   const storedTheme = localStorage.getItem('theme')
-  const [theme, setTheme] = useState(storedTheme || 'dark')
 
+  const [theme, setTheme] = useState(storedTheme || 'dark')
   const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
@@ -49,28 +52,36 @@ function App() {
   }
 
   return (
-    <>
-      <button
-        id="darkmode"
-        type="button"
-        onClick={handleThemeChange}
-        aria-label={`Toggle ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
-        className="fixed p-2 z-10 right-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-violet-300"
-      >
-        {theme === 'dark' ? sun : moon}
-      </button>
-      <Home theme={theme} />
-
-      {scrollY > 10 && (
-        <button
-          id="scrollUp"
-          onClick={handleScrollToTop}
-          className="fixed p-2 z-10 right-10 bottom-4 text-lg rounded-md bg-stone-950 dark:bg-violet-300"
-        >
-          {theme === 'light' ? arrowUpWhite : arrowUpDark}
-        </button>
-      )}
-    </>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Home theme={theme} />
+            <ScrollUp
+              theme={theme}
+              handleThemeChange={handleThemeChange}
+              scrollY={scrollY}
+              handleScrollToTop={handleScrollToTop}
+            />
+          </>
+        }
+      />
+      <Route
+        path="*"
+        element={
+          <>
+            <NotFound theme={theme} />
+            <ScrollUp
+              theme={theme}
+              handleThemeChange={handleThemeChange}
+              scrollY={scrollY}
+              handleScrollToTop={handleScrollToTop}
+            />
+          </>
+        }
+      />
+    </Routes>
   )
 }
 
