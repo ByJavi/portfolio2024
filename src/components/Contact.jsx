@@ -10,6 +10,7 @@ function Contact() {
   const formulario = useRef()
 
   const handleSubmit = (event) => {
+    setResult(true)
     event.preventDefault()
     emailjs
       .sendForm(
@@ -67,10 +68,10 @@ function Contact() {
 
             <button type="submit" className="">
               {result ? (
-                <div className="animate-load">
+                <div className="animate-load ">
                   <span className="bg-overlay"></span>
                   <span className="bg-border"></span>
-                  <p className="">Mensaje enviado!</p>
+                  <p className="">Enviando Mensaje...</p>
                 </div>
               ) : (
                 <Button texts="Trabajemos Juntos" />
