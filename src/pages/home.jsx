@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import Portfolio from '../components/Portfolio'
 import Resume from '../components/Resume'
 import Timeline from '../components/Timeline'
+import FallingThings from '../utils/FallingThings'
 
 function App({ theme }) {
   return (
@@ -13,6 +14,7 @@ function App({ theme }) {
         }`}
       >
         <div className="">
+          <FallingThings />
           <Resume />
           <Portfolio />
           <Timeline />

@@ -10,7 +10,7 @@ import ScrollUp from './components/ScrollUp'
 function App() {
   const storedTheme = localStorage.getItem('theme')
 
-  const [theme, setTheme] = useState(storedTheme || 'dark')
+  const [theme, setTheme] = useState(storedTheme || 'light')
   const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
