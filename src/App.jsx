@@ -52,36 +52,18 @@ function App() {
   }
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Home theme={theme} />
-            <ScrollUp
-              theme={theme}
-              handleThemeChange={handleThemeChange}
-              scrollY={scrollY}
-              handleScrollToTop={handleScrollToTop}
-            />
-          </>
-        }
+    <>
+      <Routes>
+        <Route path="/" element={<Home theme={theme} />} />
+        <Route path="*" element={<NotFound theme={theme} />} />
+      </Routes>
+      <ScrollUp
+        theme={theme}
+        handleThemeChange={handleThemeChange}
+        scrollY={scrollY}
+        handleScrollToTop={handleScrollToTop}
       />
-      <Route
-        path="*"
-        element={
-          <>
-            <NotFound theme={theme} />
-            <ScrollUp
-              theme={theme}
-              handleThemeChange={handleThemeChange}
-              scrollY={scrollY}
-              handleScrollToTop={handleScrollToTop}
-            />
-          </>
-        }
-      />
-    </Routes>
+    </>
   )
 }
 
