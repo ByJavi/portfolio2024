@@ -1,5 +1,6 @@
 import LazyLoad from 'react-lazyload'
 import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade'
 
 import Button from './Button'
 import CarouselText from './CarouselText'
@@ -11,7 +12,7 @@ function Portfolio() {
       <div className="my-10 py-10">
         <CarouselText texts="Portfolio" />
       </div>
-      <div className="">
+      <Fade bottom>
         <div className="flex flex-col gap-8">
           <LazyLoad height={200} offset={200}>
             <PortfolioCard />
@@ -25,7 +26,7 @@ function Portfolio() {
             <Button texts="Mas Proyectos" />
           </Link>
         </div>
-      </div>
+      </Fade>
     </section>
   )
 }

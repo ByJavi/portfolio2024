@@ -1,8 +1,10 @@
+import Zoom from 'react-reveal'
+
 import Button from './Button'
 
 function Resume() {
   return (
-    <section
+    <Zoom
       id="resume"
       className="flex items-center justify-center h-screen flex-col pt-20 pb-6 "
     >
@@ -41,7 +43,7 @@ function Resume() {
           </a>
         </article>
       </div>
-    </section>
+    </Zoom>
   )
 }
 
