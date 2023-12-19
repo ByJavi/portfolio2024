@@ -1,3 +1,9 @@
+import arrowUpWhiteSVG from '../assets/icons/arrowUpWhite.svg'
+import arrowUpBlackSVG from '../assets/icons/arrowUpDark.svg'
+
+import leftArrowBlack from '../assets/icons/bx-left-arrow-black.svg'
+import leftArrowWhite from '../assets/icons/bx-left-arrow-white.svg.svg'
+
 export const sun = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +40,7 @@ export const moon = (
 
 export const arrowUpWhite = (
   <img
-    src="/arrowUpWhite.svg"
+    src={arrowUpWhiteSVG}
     width={24}
     height={24}
     alt="arrow up color White"
@@ -43,7 +49,7 @@ export const arrowUpWhite = (
 
 export const arrowUpDark = (
   <img
-    src="/arrowUpDark.svg"
+    src={arrowUpBlackSVG}
     width={24}
     height={24}
     alt="arrow up color Black"
@@ -51,19 +57,9 @@ export const arrowUpDark = (
 )
 
 export const arrowLeftBlack = (
-  <img
-    src="/bx-left-arrow-black.svg"
-    width={24}
-    height={24}
-    alt="arrow back to page"
-  />
+  <img src={leftArrowBlack} width={24} height={24} alt="arrow back to page" />
 )
 
 export const arrowLeftWhite = (
-  <img
-    src="/bx-left-arrow-white.svg.svg"
-    width={24}
-    height={24}
-    alt="arrow back to page"
-  />
+  <img src={leftArrowWhite} width={24} height={24} alt="arrow back to page" />
 )
