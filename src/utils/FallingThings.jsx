@@ -1,5 +1,3 @@
-import '../styles/FallingThings.css'
-
 const FallingThings = () => {
   return (
     <div className="area">

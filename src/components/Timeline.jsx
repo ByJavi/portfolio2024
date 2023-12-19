@@ -1,4 +1,4 @@
-import CarouselText from './CarouselText/CarouselText'
+import CarouselText from './CarouselText'
 
 function Timeline() {
   return (

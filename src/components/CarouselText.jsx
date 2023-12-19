@@ -1,5 +1,3 @@
-import './CarouselText.css'
-
 const CarouselText = ({ texts }) => {
   return (
     <section className="font-bold text-6xl opacity-20">

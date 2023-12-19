@@ -2,7 +2,7 @@ import LazyLoad from 'react-lazyload'
 import { Link } from 'react-router-dom'
 
 import Button from './Button'
-import CarouselText from './CarouselText/CarouselText'
+import CarouselText from './CarouselText'
 import PortfolioCard from './PortfolioCard/PortfolioCard'
 
 function Portfolio() {

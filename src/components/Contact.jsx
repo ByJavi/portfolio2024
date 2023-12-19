@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-import CarouselText from './CarouselText/CarouselText'
+import CarouselText from './CarouselText'
 import Button from './Button'
 
 function Contact() {
