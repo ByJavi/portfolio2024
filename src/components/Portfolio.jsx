@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 
 import Button from './Button'
 import CarouselText from './CarouselText'
-import PortfolioCard from './PortfolioCard/PortfolioCard'
+import PortfolioCard from './PortfolioCard'
 
 function Portfolio() {
   return (
