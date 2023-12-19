@@ -1,4 +1,5 @@
 import LazyLoad from 'react-lazyload'
+import { Link } from 'react-router-dom'
 
 import Button from './Button'
 import CarouselText from './CarouselText/CarouselText'
@@ -20,7 +21,9 @@ function Portfolio() {
           className="flex items-center justify-center m-10 p-5"
           data-aos="slide-up"
         >
-          <Button texts="Mas Proyectos" />
+          <Link to="/works">
+            <Button texts="Mas Proyectos" />
+          </Link>
         </div>
       </div>
     </section>

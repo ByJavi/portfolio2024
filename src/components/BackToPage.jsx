@@ -3,10 +3,13 @@ import { arrowLeftWhite, arrowLeftBlack } from '../utils/constants'
 
 const ButtonBack = ({ theme }) => {
   const location = useLocation()
-  const parts = location.pathname.split('/').filter(Boolean) // Filtra las partes vacías
 
-  // Elimina la última parte de la ruta
-  const parentPath = parts.slice(0, -1).join('/')
+  // Si estamos en la raíz, el enlace de retroceso lleva de vuelta al inicio
+  const parentPath =
+    location.pathname === '/'
+      ? '/'
+      : location.pathname.split('/').slice(0, -1).join('/')
+
   return (
     <Link
       to={parentPath}
