@@ -49,3 +49,48 @@
 .dark .scroll-container::-webkit-scrollbar-track {
   background-color: rgb(196 181 253);
 } */
+
+:root {
+  --scrollbarBG-light: #333;
+  --thumbBG-light: #7f7f7f;
+  --scrollbarBG-dark: rgb(
+    196 181 253
+  ); /* Color oscuro de la pista del scrollbar en modo oscuro */
+  --thumbBG-dark: rgb(
+    109 40 217
+  ); /* Color oscuro del pulgar del scrollbar en modo oscuro */
+}
+
+/* Estilos del scrollbar */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG-light) var(--scrollbarBG-light);
+}
+
+/* Estilos específicos del pulgar del scrollbar */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG-light);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG-light);
+}
+
+/* Estilos específicos de la pista del scrollbar */
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG-light);
+}
+
+/* Estilos específicos del pulgar del scrollbar en modo oscuro */
+.dark body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG-dark);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG-dark);
+}
+
+/* Estilos específicos de la pista del scrollbar en modo oscuro */
+.dark body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG-dark);
+}
