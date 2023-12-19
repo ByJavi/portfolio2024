@@ -23,8 +23,13 @@ function Resume() {
             creación de soluciones innovadoras en el mundo digital.
           </p>
         </article>
-        <article className="flex gap-4 mb-60">
-          <a href="Javier_Ledesma.pdf" target="_blank" rel="noreferrer">
+        <article className="flex flex-col sm:flex-row gap-4 mb-6 items-center">
+          <a
+            href="Javier_Ledesma.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="mb-2 md:mb-0"
+          >
             <Button texts="Curriculum" />
           </a>
           <a
