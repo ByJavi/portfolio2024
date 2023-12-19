@@ -4,7 +4,7 @@ function Resume() {
   return (
     <section
       id="resume"
-      className="flex items-center justify-center h-screen flex-col pt-20 pb-6"
+      className="flex items-center justify-center h-screen flex-col pt-20 pb-6 "
     >
       <div
         className="flex items-center justify-center h-screen flex-col"
