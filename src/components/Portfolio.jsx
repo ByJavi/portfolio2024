@@ -6,10 +6,8 @@ import Button from './Button'
 import CarouselText from './CarouselText'
 import PortfolioCard from './PortfolioCard'
 
-import fetchDataFromGoogleSheets from '../data/cvs.js' // Ajusta la ruta según la ubicación real
-
+// Ajusta la ruta según la ubicación real
 function Portfolio() {
-  console.log(fetchDataFromGoogleSheets())
   return (
     <section name="portfolio" className="my-10">
       <div className="my-10 py-10">
