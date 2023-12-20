@@ -16,7 +16,7 @@ function Resume() {
           <p className="text-base md:text-xl mb-3 font-medium">
             Desarrollador Web
           </p>
-          <p className="text-sm max-w-xl mb-6 font-bold">
+          <p className="text-sm max-w-xl mb-6 font-medium">
             Combino mi interés técnico con mi dedicación al desarrollo web. Mi
             enfoque abarca tanto la resolución de desafíos técnicos como la
             creación de soluciones innovadoras en el mundo digital.

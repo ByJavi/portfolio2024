@@ -9,7 +9,7 @@ function moreProjects({ theme }) {
         } bg-gradient-color`}
       >
         <ButtonBack theme={theme} />
-        <div className="flex items-center h-screen flex-col pt-20 pb-6 bg-quadrille">
+        <div className="flex items-center h-screen flex-col pt-20 pb-6">
           <article className="mt-10 mb-5 px-5">
             <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold ">
               Mas Proyectos

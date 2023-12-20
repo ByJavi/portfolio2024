@@ -10,7 +10,7 @@ function Portfolio() {
   return (
     <section name="portfolio" className="my-10">
       <div className="my-10 py-10">
-        <CarouselText texts="Portfolio" />
+        <CarouselText texts="PORTFOLIO" />
       </div>
       <Fade bottom>
         <div className="flex flex-col gap-8">

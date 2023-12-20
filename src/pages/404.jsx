@@ -9,7 +9,7 @@ const NotFound = ({ theme }) => {
         } bg-gradient-color`}
       >
         <BackToPage theme={theme} />
-        <article className="flex items-center justify-center h-screen flex-col pt-20 pb-6 text-center  bg-quadrille">
+        <article className="flex items-center justify-center h-screen flex-col pt-20 pb-6 text-center ">
           <h2 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold ">
             404 - Página no encontrada
           </h2>

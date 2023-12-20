@@ -37,7 +37,7 @@ function Contact() {
   return (
     <section className="my-40 ">
       <div className="my-10 py-10">
-        <CarouselText texts="Contactame" />
+        <CarouselText texts="CONTACTAME" />
       </div>
       <article className="max-w-5xl w-11/12 mx-auto flex justify-center items-center">
         <Fade bottom>

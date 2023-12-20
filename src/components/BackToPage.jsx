@@ -13,7 +13,7 @@ const ButtonBack = ({ theme }) => {
   return (
     <Link
       to={parentPath || '/'} // Utiliza la raíz si parentPath está vacío
-      className="fixed p-2 z-10 left-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-violet-300"
+      className="fixed p-2 z-10 left-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-violet-700 hover:bg-stone-800 dark:hover:bg-violet-600"
     >
       {theme === 'light' ? arrowLeftWhite : arrowLeftBlack}
     </Link>

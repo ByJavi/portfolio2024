@@ -2,7 +2,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Portfolio from '../components/Portfolio'
 import Resume from '../components/Resume'
-import Timeline from '../components/Timeline'
+import AboutMe from '../components/AboutMe'
 
 function App({ theme }) {
   return (
@@ -11,10 +11,10 @@ function App({ theme }) {
         theme ? 'dark' : 'light'
       }`}
     >
-      <section className="bg-quadrille">
+      <section className="">
         <Resume />
         <Portfolio />
-        <Timeline />
+        <AboutMe />
         <Contact />
         <Footer />
       </section>
