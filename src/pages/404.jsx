@@ -6,10 +6,10 @@ const NotFound = ({ theme }) => {
       <section
         className={`bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 font-inter${
           theme ? 'dark' : 'light'
-        }`}
+        } bg-gradient-color`}
       >
         <BackToPage theme={theme} />
-        <article className="flex items-center justify-center h-screen flex-col pt-20 pb-6 text-center">
+        <article className="flex items-center justify-center h-screen flex-col pt-20 pb-6 text-center  bg-quadrille">
           <h2 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold ">
             404 - Página no encontrada
           </h2>

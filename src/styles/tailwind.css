@@ -21,6 +21,14 @@
   .animate-load p {
     @apply relative text-black group-hover:text-white;
   }
+
+  .bg-quadrille {
+    @apply bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:50px_50px];
+  }
+
+  .bg-gradient-color {
+    @apply bg-gradient-to-l from-gray-200 via-transparent to-gray-200 dark:to-black dark:from-black dark:via-transparent;
+  }
 }
 
 /* .scroll-container {

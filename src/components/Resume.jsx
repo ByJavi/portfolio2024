@@ -6,14 +6,11 @@ function Resume() {
   return (
     <Zoom
       id="resume"
-      className="flex items-center justify-center h-screen flex-col pt-20 pb-6 "
+      className="flex items-center justify-center h-screen flex-col pt-20 pb-6"
     >
-      <div
-        className="flex items-center justify-center h-screen flex-col"
-        data-aos="slide-up"
-      >
+      <div className="flex items-center justify-center h-screen flex-col">
         <article className="text-center mt-10 mb-5 px-5">
-          <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold ">
+          <h1 className="text-5xl md:text-7xl mb-1 md:mb-3 font-bold">
             Ledesma Javier
           </h1>
           <p className="text-base md:text-xl mb-3 font-medium">

@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import Fade from 'react-reveal'
 
 import CarouselText from './CarouselText'
 import Button from './Button'
@@ -34,12 +35,12 @@ function Contact() {
   }
 
   return (
-    <section className="my-40">
+    <section className="my-40 ">
       <div className="my-10 py-10">
         <CarouselText texts="Contactame" />
       </div>
-      <article className="max-w-5xl w-11/12 mx-auto">
-        <div className="flex justify-center items-center">
+      <article className="max-w-5xl w-11/12 mx-auto flex justify-center items-center">
+        <Fade bottom>
           <form
             ref={formulario}
             onSubmit={handleSubmit}
@@ -50,13 +51,13 @@ function Contact() {
               type="text"
               name="name"
               placeholder="Nombre"
-              className="my-2 p-2 contact-inputs"
+              className="my-2 p-2 contact-inputs bg-white dark:bg-stone-950"
             ></input>
             <input
               type="text"
               name="email"
               placeholder="Email"
-              className="my-2 p-2 contact-inputs"
+              className="my-2 p-2 contact-inputs bg-white dark:bg-stone-950"
             ></input>
 
             <textarea
@@ -64,7 +65,7 @@ function Contact() {
               name="mensaje"
               placeholder="Comunica tu idea y hagámosla realidad"
               rows="10"
-              className="p-2 mb-4 contact-inputs"
+              className="p-2 mb-4 contact-inputs bg-white dark:bg-stone-950"
             ></textarea>
 
             <button type="submit" className="">
@@ -79,7 +80,7 @@ function Contact() {
               )}
             </button>
           </form>
-        </div>
+        </Fade>
       </article>
     </section>
   )
