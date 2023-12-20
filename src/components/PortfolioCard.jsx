@@ -1,6 +1,6 @@
 function PortfolioCard() {
   return (
-    <article className="p-5 font-medium group" data-aos="slide-up">
+    <article className="p-5 font-medium group">
       <img
         src="wallpaper.png"
         alt="Imagen de testeo"
