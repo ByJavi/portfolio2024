@@ -68,7 +68,7 @@ function Contact() {
               className="p-2 mb-4 contact-inputs bg-white dark:bg-stone-950"
             ></textarea>
 
-            <button type="submit" className="">
+            <button type="submit" className="w-max">
               {result ? (
                 <div className="animate-load ">
                   <span className="bg-overlay"></span>

@@ -17,7 +17,10 @@ function AboutMe() {
         <Fade left>
           <article className="relative flex flex-col sm:flex-row bg-clip-border rounded-xl shadow-md w-full max-w-[48rem]">
             {/* Imagen */}
-            <div className="relative w-full sm:w-2/5 m-0 overflow-hidden rounded-lg sm:rounded-r-none bg-clip-border sm:rounded-xl shrink-0">
+            <div
+              className="relative w-full sm:w-2/5 m-0 overflow-hidden 
+             shrink-0"
+            >
               <LazyLoad height={200} offset={200}>
                 <img
                   src={JavierImagen}
