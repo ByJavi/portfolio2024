@@ -15,7 +15,7 @@ function Portfolio() {
       </div>
       <Fade bottom>
         <div className="flex flex-col gap-8">
-          <LazyLoad height={200} offset={200}>
+          <LazyLoad height={500} offset={500}>
             <PortfolioCard />
           </LazyLoad>
         </div>
