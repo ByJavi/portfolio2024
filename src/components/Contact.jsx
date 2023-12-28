@@ -17,7 +17,7 @@ function Contact() {
       .sendForm(
         'service_kffhrq6',
         'template_bk1u4y1',
-        formulario.current,
+        '#formulario',
         '1J-6Rhph15xqABoX3'
       )
       .then(
@@ -31,7 +31,7 @@ function Contact() {
       )
     setTimeout(() => {
       setResult(false)
-    }, 3000)
+    }, 1500)
   }
 
   return (
@@ -42,6 +42,7 @@ function Contact() {
       <article className="max-w-5xl w-11/12 mx-auto flex justify-center items-center">
         <Fade bottom>
           <form
+            id="formulario"
             ref={formulario}
             onSubmit={handleSubmit}
             className="flex flex-col w-full md:w-7/12 "

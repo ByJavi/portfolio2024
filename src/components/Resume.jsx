@@ -13,9 +13,9 @@ function Resume() {
           <h1 className="text-5xl md:text-7xl mb-1 md:mb-3 font-bold">
             Ledesma Javier
           </h1>
-          <p className="text-base md:text-xl mb-3 font-medium">
+          <h2 className="text-base md:text-xl mb-3 font-medium">
             Desarrollador Web
-          </p>
+          </h2>
           <p className="text-sm max-w-xl mb-6 font-medium">
             Combino mi interés técnico con mi dedicación al desarrollo web. Mi
             enfoque abarca tanto la resolución de desafíos técnicos como la

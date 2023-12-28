@@ -32,9 +32,9 @@ function AboutMe() {
 
             {/* Contenido de texto */}
             <div className="p-6 flex flex-col justify-center">
-              <h6 className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal uppercase">
+              <h3 className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal uppercase">
                 Hola!
-              </h6>
+              </h3>
               <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal">
                 Soy Javier Ledesma
               </h4>
