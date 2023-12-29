@@ -8,7 +8,7 @@ const CarouselImage = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef
   })
-  const x = useTransform(scrollYProgress, [0, 1], ['1%', '-95%'])
+  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-100%'])
 
   const CardExample = [
     {
@@ -38,8 +38,8 @@ const CarouselImage = () => {
     }
   ]
   return (
-    <section ref={targetRef} className="relative  h-[300vh]">
-      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+    <section ref={targetRef} className="relative h-[500vh]">
+      <div className="sticky top-40 md:top-0 h-screen flex items-center overflow-hidden">
         <motion.div className="flex gap-4" style={{ x }}>
           {CardExample.map((card) => {
             return <PortfolioCard card={card} key={card.id} />

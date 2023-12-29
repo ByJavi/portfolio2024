@@ -11,9 +11,11 @@ function Portfolio() {
     <section name="portfolio" className="my-10">
       <Fade bottom>
         <CarouselText texts="PORTFOLIO" />
+        <section className="my-10">
+          <CarouselImage />
+        </section>
 
-        <CarouselImage />
-        <div className="flex items-center justify-center m-10 p-5">
+        <div className="flex items-center justify-center mx-10">
           <Link to="/works">
             <Button texts="Mas Proyectos" />
           </Link>
