@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-import Fade from 'react-reveal'
+// import Fade from 'react-reveal'
 
 import CarouselText from './CarouselText'
 import Button from './Button'
@@ -40,48 +40,48 @@ function Contact() {
         <CarouselText texts="CONTACTAME" />
       </div>
       <article className="max-w-5xl w-11/12 mx-auto flex justify-center items-center">
-        <Fade bottom>
-          <form
-            id="formulario"
-            ref={formulario}
-            onSubmit={handleSubmit}
-            className="flex flex-col w-full md:w-7/12 "
-            data-aos="slide-up"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Nombre"
-              className="my-2 p-2 contact-inputs bg-white dark:bg-stone-950"
-            ></input>
-            <input
-              type="text"
-              name="email"
-              placeholder="Email"
-              className="my-2 p-2 contact-inputs bg-white dark:bg-stone-950"
-            ></input>
+        {/* <Fade bottom> */}
+        <form
+          id="formulario"
+          ref={formulario}
+          onSubmit={handleSubmit}
+          className="flex flex-col w-full md:w-7/12 "
+          data-aos="slide-up"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            className="my-2 p-2 contact-inputs bg-white dark:bg-stone-950"
+          ></input>
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            className="my-2 p-2 contact-inputs bg-white dark:bg-stone-950"
+          ></input>
 
-            <textarea
-              type="text"
-              name="mensaje"
-              placeholder="Comunica tu idea y hagámosla realidad"
-              rows="10"
-              className="p-2 mb-4 contact-inputs bg-white dark:bg-stone-950"
-            ></textarea>
+          <textarea
+            type="text"
+            name="mensaje"
+            placeholder="Comunica tu idea y hagámosla realidad"
+            rows="10"
+            className="p-2 mb-4 contact-inputs bg-white dark:bg-stone-950"
+          ></textarea>
 
-            <button type="submit" className="w-max">
-              {result ? (
-                <div className="animate-load ">
-                  <span className="bg-overlay"></span>
-                  <span className="bg-border"></span>
-                  <p className="">Enviando Mensaje...</p>
-                </div>
-              ) : (
-                <Button texts="Trabajemos Juntos" />
-              )}
-            </button>
-          </form>
-        </Fade>
+          <button type="submit" className="w-max">
+            {result ? (
+              <div className="animate-load ">
+                <span className="bg-overlay"></span>
+                <span className="bg-border"></span>
+                <p className="">Enviando Mensaje...</p>
+              </div>
+            ) : (
+              <Button texts="Trabajemos Juntos" />
+            )}
+          </button>
+        </form>
+        {/* </Fade> */}
       </article>
     </section>
   )

@@ -1,15 +1,26 @@
-import Zoom from 'react-reveal'
+// import Zoom from 'react-reveal'
+import { motion } from 'framer-motion'
 
 import Button from './Button'
 
 function Resume() {
   return (
-    <Zoom
+    <section
       id="resume"
       className="flex items-center justify-center h-screen flex-col pt-20 pb-6"
     >
-      <div className="flex items-center justify-center h-screen flex-col">
-        <article className="text-center mt-10 mb-5 px-5">
+      <motion.div
+        className="flex items-center justify-center h-screen flex-col"
+        initial={{ scale: 0.5, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <motion.article
+          className="text-center mt-10 mb-5 px-5"
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <h1 className="text-5xl md:text-7xl mb-1 md:mb-3 font-bold">
             Ledesma Javier
           </h1>
@@ -21,8 +32,13 @@ function Resume() {
             enfoque abarca tanto la resolución de desafíos técnicos como la
             creación de soluciones innovadoras en el mundo digital.
           </p>
-        </article>
-        <article className="flex flex-col sm:flex-row gap-4 mb-6 items-center">
+        </motion.article>
+        <motion.article
+          className="flex flex-col sm:flex-row gap-4 mb-6 items-center"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
           <a
             href="Javier_Ledesma.pdf"
             target="_blank"
@@ -38,9 +54,9 @@ function Resume() {
           >
             <Button texts="LinkedIn" />
           </a>
-        </article>
-      </div>
-    </Zoom>
+        </motion.article>
+      </motion.div>
+    </section>
   )
 }
 

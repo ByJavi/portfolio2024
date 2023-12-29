@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade'
+// import Fade from 'react-reveal/Fade'
 import LazyLoad from 'react-lazyload'
 
 import CarouselText from './CarouselText'
@@ -14,68 +14,68 @@ function AboutMe() {
       </div>
       <section className="flex flex-col items-center gap-10 mx-5">
         {/* Primer artículo */}
-        <Fade left>
-          <article className="relative flex flex-col sm:flex-row bg-clip-border rounded-xl shadow-md w-full max-w-[48rem]">
-            {/* Imagen */}
-            <div
-              className="relative w-full sm:w-2/5 m-0 overflow-hidden 
+        {/* <Fade left> */}
+        <article className="relative flex flex-col sm:flex-row bg-clip-border rounded-xl shadow-md w-full max-w-[48rem]">
+          {/* Imagen */}
+          <div
+            className="relative w-full sm:w-2/5 m-0 overflow-hidden 
              shrink-0"
-            >
-              <LazyLoad height={200} offset={200}>
-                <img
-                  src={JavierImagen}
-                  alt="Ledesma Javier, desarrollador web"
-                  className="object-cover w-full h-full rounded-lg sm:rounded-lg"
-                />
-              </LazyLoad>
-            </div>
+          >
+            <LazyLoad height={200} offset={200}>
+              <img
+                src={JavierImagen}
+                alt="Ledesma Javier, desarrollador web"
+                className="object-cover w-full h-full rounded-lg sm:rounded-lg"
+              />
+            </LazyLoad>
+          </div>
 
-            {/* Contenido de texto */}
-            <div className="p-6 flex flex-col justify-center">
-              <h3 className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal uppercase">
-                Hola!
-              </h3>
-              <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal">
-                Soy Javier Ledesma
-              </h4>
-              <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed">
-                Un argentino de 22 años que actualmente se dedica al estudio
-                autodidacta de varias tecnologías. Hace aproximadamente 1 año
-                que estoy enfocado en el desarrollo front-end, poniendo especial
-                énfasis en tecnologías como ReactJS y Next.js.
-              </p>
-            </div>
-          </article>
-        </Fade>
+          {/* Contenido de texto */}
+          <div className="p-6 flex flex-col justify-center">
+            <h3 className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal uppercase">
+              Hola!
+            </h3>
+            <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal">
+              Soy Javier Ledesma
+            </h4>
+            <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed">
+              Un argentino de 22 años que actualmente se dedica al estudio
+              autodidacta de varias tecnologías. Hace aproximadamente 1 año que
+              estoy enfocado en el desarrollo front-end, poniendo especial
+              énfasis en tecnologías como ReactJS y Next.js.
+            </p>
+          </div>
+        </article>
+        {/* </Fade> */}
 
         {/* Segundo artículo */}
-        <Fade left>
-          <article className="relative flex flex-col sm:flex-row bg-clip-border rounded-xl shadow-md w-full max-w-[48rem]">
-            {/* Imagen */}
-            <div className="relative w-full sm:w-2/5 m-0 overflow-hidden rounded-lg sm:rounded-r-none bg-clip-border sm:rounded-xl shrink-0">
-              <LazyLoad height={200} offset={200}>
-                <img
-                  src={gataMorena}
-                  alt="Gatita gaming"
-                  className="object-cover w-full h-full rounded-lg sm:rounded-lg"
-                />
-              </LazyLoad>
-            </div>
+        {/* <Fade left> */}
+        <article className="relative flex flex-col sm:flex-row bg-clip-border rounded-xl shadow-md w-full max-w-[48rem]">
+          {/* Imagen */}
+          <div className="relative w-full sm:w-2/5 m-0 overflow-hidden rounded-lg sm:rounded-r-none bg-clip-border sm:rounded-xl shrink-0">
+            <LazyLoad height={200} offset={200}>
+              <img
+                src={gataMorena}
+                alt="Gatita gaming"
+                className="object-cover w-full h-full rounded-lg sm:rounded-lg"
+              />
+            </LazyLoad>
+          </div>
 
-            {/* Contenido de texto */}
-            <div className="p-6 flex flex-col justify-center">
-              <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                Morena
-              </h4>
-              <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed">
-                Mi adorable gata y muy loca a veces, se convirtió en parte de mi
-                familia en julio de este año 2023.
-                <br />
-                <br /> Desde entonces, ha sido mi compañera de estudio.
-              </p>
-            </div>
-          </article>
-        </Fade>
+          {/* Contenido de texto */}
+          <div className="p-6 flex flex-col justify-center">
+            <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              Morena
+            </h4>
+            <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed">
+              Mi adorable gata y muy loca a veces, se convirtió en parte de mi
+              familia en julio de este año 2023.
+              <br />
+              <br /> Desde entonces, ha sido mi compañera de estudio.
+            </p>
+          </div>
+        </article>
+        {/* </Fade> */}
       </section>
     </section>
   )
