@@ -57,10 +57,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home theme={theme} />} />
-
         <Route path="/works" element={<MoreProjects theme={theme} />} />
         <Route path="/works/:id" element={<ProjectsPage theme={theme} />} />
-
         <Route path="*" element={<NotFound theme={theme} />} />
       </Routes>
       <ScrollUp
