@@ -5,7 +5,7 @@ import { animateScroll } from 'react-scroll'
 
 import Home from './pages/home'
 import NotFound from './pages/404'
-import MoreProjects from './pages/MoreProjects'
+import moreProjects from './pages/moreProjects'
 import ProjectsPage from './pages/ProjectsPage'
 import ScrollUp from './components/ScrollUp'
 
@@ -57,7 +57,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home theme={theme} />} />
-        <Route path="/works" element={<MoreProjects theme={theme} />} />
+        <Route path="/works" element={<moreProjects theme={theme} />} />
         <Route path="/works/:id" element={<ProjectsPage theme={theme} />} />
         <Route path="*" element={<NotFound theme={theme} />} />
       </Routes>
