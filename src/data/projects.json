@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "url": "discord-clone",
+    "title": "Discord Clone",
+    "preview": "/proyects/wallpaper.png",
+    "github": "#",
+    "web": "#",
+    "resume": "resumen del proyecto",
+    "techs": ["React", "Framer Motion", "Css"],
+    "imagesDesk": [
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png"
+    ],
+    "imagesMobil": [
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png"
+    ]
+  },
+  {
+    "id": 2,
+    "url": "discord",
+    "title": "Discord Clone",
+    "preview": "/proyects/wallpaper.png",
+    "github": "#",
+    "web": "#",
+    "resume": "resumen del proyecto",
+    "techs": ["React", "Framer Motion", "Css"],
+    "imagesDesk": [
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png"
+    ],
+    "imagesMobil": [
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png"
+    ]
+  },
+  {
+    "id": 3,
+    "url": "discord-clone",
+    "title": "Discord Clone",
+    "preview": "/proyects/wallpaper.png",
+    "github": "#",
+    "web": "#",
+    "resume": "resumen del proyecto",
+    "techs": ["React", "Framer Motion", "Css"],
+    "imagesDesk": [
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png"
+    ],
+    "imagesMobil": [
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png",
+      "/proyects/wallpaper.png"
+    ]
+  }
+]

@@ -1,23 +1,35 @@
+import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { arrowLeftWhite, arrowLeftBlack } from '../utils/constants'
 
-const ButtonBack = ({ theme }) => {
+const Breadcrumb = () => {
   const location = useLocation()
 
-  // Si estamos en la raíz, el enlace de retroceso lleva de vuelta al inicio
-  const parentPath =
-    location.pathname === '/'
-      ? '/'
-      : location.pathname.split('/').slice(0, -1).join('/')
+  // Obtén los fragmentos de la ruta y filtra los elementos vacíos
+  const pathSegments = location.pathname.split('/').filter(Boolean)
 
   return (
-    <Link
-      to={parentPath || '/'} // Utiliza la raíz si parentPath está vacío
-      className="fixed p-2 z-10 left-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-violet-700 hover:bg-stone-800 dark:hover:bg-violet-600"
-    >
-      {theme === 'light' ? arrowLeftWhite : arrowLeftBlack}
-    </Link>
+    <div className="fixed p-2 z-10 left-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-violet-700">
+      {/* Muestra la dirección actual */}
+      {pathSegments.length > 0 && (
+        <div className="flex items-center text-white dark:text-black">
+          <Link to="/" className="hover:underline">
+            Home
+          </Link>
+          {pathSegments.map((segment, index) => (
+            <React.Fragment key={index}>
+              <span className="mx-1">/</span>
+              <Link
+                to={`/${pathSegments.slice(0, index + 1).join('/')}`}
+                className="hover:underline"
+              >
+                {segment}
+              </Link>
+            </React.Fragment>
+          ))}
+        </div>
+      )}
+    </div>
   )
 }
 
-export default ButtonBack
+export default Breadcrumb

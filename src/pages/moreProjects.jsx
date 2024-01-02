@@ -1,24 +1,33 @@
+// MoreProjects.js
+import { Link } from 'react-router-dom'
+
 import ButtonBack from '../components/BackToPage'
 
-function moreProjects({ theme }) {
+import data from '../data/projects.json'
+
+function MoreProjects({ theme }) {
   return (
-    <>
-      <main
-        className={`bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 font-inter${
-          theme ? 'dark' : 'light'
-        } bg-gradient-color`}
-      >
-        <ButtonBack theme={theme} />
-        <div className="flex items-center h-screen flex-col pt-20 pb-6">
-          <article className="mt-10 mb-5 px-5">
-            <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold ">
-              Mas Proyectos
-            </h1>
-          </article>
-        </div>
-      </main>
-    </>
+    <main className="min-h-screen w-full bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 font-inter bg-gradient-color">
+      <ButtonBack theme={theme} />
+      <section className="flex items-center flex-col pt-20 pb-6">
+        <h1 className="mt-10 mb-5 px-5 text-4xl md:text-7xl md:mb-3 font-bold">
+          Más Proyectos
+        </h1>
+        <ul className="list-none">
+          {data.map((project) => (
+            <li key={project.id} className="mb-3">
+              <Link
+                to={`/works/${project.url}`}
+                className="text-indigo-600 hover:underline"
+              >
+                {project.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </main>
   )
 }
 
-export default moreProjects
+export default MoreProjects
