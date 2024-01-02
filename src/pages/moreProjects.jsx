@@ -1,11 +1,20 @@
-// MoreProjects.js
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-
 import ButtonBack from '../components/BackToPage'
-
 import data from '../data/projects.json'
 
 function MoreProjects({ theme }) {
+  const [projectsData, setProjectsData] = useState([])
+
+  useEffect(() => {
+    if (projectsData.length === 0) {
+      // Simulación de carga de datos desde el archivo JSON
+      // Reemplazar con la lógica de carga real
+      console.log('Cargando datos desde el archivo JSON...')
+      setProjectsData(data)
+    }
+  }, [projectsData])
+
   return (
     <main className="min-h-screen w-full bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 font-inter bg-gradient-color">
       <ButtonBack theme={theme} />
@@ -14,7 +23,7 @@ function MoreProjects({ theme }) {
           Más Proyectos
         </h1>
         <ul className="list-none">
-          {data.map((project) => (
+          {projectsData.map((project) => (
             <li key={project.id} className="mb-3">
               <Link
                 to={`/works/${project.url}`}

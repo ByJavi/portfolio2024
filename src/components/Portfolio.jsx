@@ -1,29 +1,38 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-// import Fade from 'react-reveal/Fade'
-
 import Button from './Button'
 import CarouselText from './CarouselText'
 import CarouselImage from './CarouselImage'
-
 import data from '../data/projects.json'
 
-// Ajusta la ruta según la ubicación real
 function Portfolio() {
-  console.log(data)
+  // Estado para almacenar los datos del JSON
+  const [projectsData, setProjectsData] = useState([])
+
+  // Efecto para cargar los datos del JSON una vez
+  useEffect(() => {
+    // Verificar si ya se han cargado los datos para evitar la recarga
+    if (projectsData.length === 0) {
+      // Simulación de carga de datos desde el archivo JSON
+      // Reemplazar con la lógica de carga real
+      console.log('Cargando datos desde el archivo JSON...')
+      setProjectsData(data)
+    }
+  }, [projectsData])
+
   return (
     <section name="portfolio" className="my-10">
-      {/* <Fade bottom> */}
       <CarouselText texts="PORTFOLIO" />
       <section className="my-10">
-        <CarouselImage data={data} />
+        {/* Pasar los datos almacenados al componente CarouselImage */}
+        <CarouselImage data={projectsData} />
       </section>
 
       <div className="flex items-center justify-center mx-10">
         <Link to="/works">
-          <Button texts="Mas Proyectos" />
+          <Button texts="Más Proyectos" />
         </Link>
       </div>
-      {/* </Fade> */}
     </section>
   )
 }
