@@ -26,7 +26,7 @@ function ProjectsPage({ theme }) {
       }`}
     >
       <BackToPage theme={theme} />
-      <section className="max-w-screen-lg mx-auto p-5 sm:p-10 md:p-16">
+      <section className="mx-auto p-1 relative">
         {selectedWork ? (
           <ProjectDetail project={selectedWork} />
         ) : (
