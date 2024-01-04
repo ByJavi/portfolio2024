@@ -22,7 +22,6 @@
       content="programador web, desarrollo web, freelancer, HTML, CSS, JavaScript, React, Node.js, MongoDB, servicios web, sitios web personalizados"
     />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Javier Ledesma" />
 
     <title>Ledesma Javier Desarrollador Web</title>
@@ -30,5 +29,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script
+      type="module"
+      src="/src/main.jsx"
+      onerror="console.error('Error al cargar el script principal')"
+    ></script>
+
+    <noscript>
+      <p>
+        Este sitio web requiere JavaScript. Por favor, habilita JavaScript en tu
+        navegador.
+      </p>
+    </noscript>
   </body>
 </html>
