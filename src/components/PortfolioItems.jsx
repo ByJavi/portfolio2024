@@ -4,8 +4,6 @@ function PortfolioItem({ project }) {
   return (
     <Link
       to={`/works/${project.url}`}
-      target="_blank"
-      rel="noopener noreferrer"
       className="border-b-4 border-r-4 border-stone-900 dark:border-violet-700 rounded-md overflow-hidden"
     >
       <img
