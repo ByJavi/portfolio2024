@@ -49,12 +49,14 @@ function Contact() {
           data-aos="slide-up"
         >
           <input
+            required
             type="text"
             name="name"
             placeholder="Nombre"
             className="my-2 p-2 contact-inputs bg-white dark:bg-stone-950"
           ></input>
           <input
+            required
             type="text"
             name="email"
             placeholder="Email"
@@ -62,6 +64,7 @@ function Contact() {
           ></input>
 
           <textarea
+            required
             type="text"
             name="mensaje"
             placeholder="Comunica tu idea y hagámosla realidad"
