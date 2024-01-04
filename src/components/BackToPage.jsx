@@ -8,12 +8,12 @@ const Breadcrumb = () => {
   const pathSegments = location.pathname.split('/').filter(Boolean)
 
   return (
-    <div className="fixed p-2 z-10 left-10 top-4 text-lg rounded-md bg-stone-950 dark:bg-violet-700">
+    <div className="fixed p-2 z-10 left-1 md:left-5 top-4 text-lg rounded-md shadow dark:shadow-violet-700 backdrop-blur-md">
       {/* Muestra la dirección actual */}
       {pathSegments.length > 0 && (
-        <div className="flex items-center text-white dark:text-black">
+        <div className="flex items-center dark:text-white text-black ">
           <Link to="/" className="hover:underline">
-            Home
+            home
           </Link>
           {pathSegments.map((segment, index) => (
             <React.Fragment key={index}>
