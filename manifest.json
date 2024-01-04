@@ -1,0 +1,15 @@
+{
+  "icons": [
+    {
+      "src": "/dev-logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Etiqueta TAG Html representativa",
+  "short_name": "</>",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
